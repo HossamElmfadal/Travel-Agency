@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="User-service" />
+        <module name="Notification-service" />
+        <module name="Flight-service" />
+        <module name="Eureka_server" />
+        <module name="Destination-service" />
+        <module name="Car-service" />
+        <module name="Review-service" />
+        <module name="Payment-service" />
+        <module name="Hotel-service" />
+      </profile>
+    </annotationProcessing>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="Car-service" options="-parameters" />
+      <module name="Destination-service" options="-parameters" />
+      <module name="Eureka_server" options="-parameters" />
+      <module name="Flight-service" options="-parameters" />
+      <module name="Hotel-service" options="-parameters" />
+      <module name="Notification-service" options="-parameters" />
+      <module name="Payment-service" options="-parameters" />
+      <module name="Review-service" options="-parameters" />
+      <module name="User-service" options="-parameters" />
+    </option>
+  </component>
+</project>
