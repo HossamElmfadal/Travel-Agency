@@ -1,6 +1,6 @@
 package com.example.Hotel_service.service;
 
-import com.example.Hotel_service.dto.HotelDto;
+import com.example.Hotel_service.dto.HotelDTO;
 import com.example.Hotel_service.model.Hotel;
 import com.example.Hotel_service.repository.HotelRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -50,7 +50,7 @@ public class HotelService {
     }
 
     // Recherche des hôtels par ville
-    public List<HotelDto> searchHotels(String city, String name) {
+    public List<HotelDTO> searchHotels(String city, String name) {
         List<Hotel> hotels;
         if (city != null && !city.isEmpty()) {
             hotels = hotelRepository.findByCity(city);
@@ -62,8 +62,8 @@ public class HotelService {
 
 
     // Méthode de conversion Hotel en HotelDto
-    public HotelDto mapToDTO(Hotel hotel) {
-        HotelDto dto = new HotelDto();
+    public HotelDTO mapToDTO(Hotel hotel) {
+        HotelDTO dto = new HotelDTO();
         dto.setId(hotel.getId());
         dto.setName(hotel.getName());
         dto.setCity(hotel.getCity());

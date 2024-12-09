@@ -42,6 +42,7 @@ public class SecurityConfig {
 */
 @Configuration
 @EnableWebSecurity
+
 public class SecurityConfig {
 
     @Bean
@@ -56,9 +57,11 @@ public class SecurityConfig {
                         .requestMatchers("/admin/**").hasRole("ADMIN")
                         .requestMatchers("/user/**").hasRole("USER")
                         .anyRequest().authenticated()
-                )
-                .httpBasic(Customizer.withDefaults());
+                );
+                //.httpBasic(Customizer.withDefaults());
 
         return http.build();
     }
 }
+
+

@@ -8,7 +8,7 @@ import lombok.*;
 @AllArgsConstructor
 @NoArgsConstructor
 
-public class HotelDto {
+public class HotelDTO {
     private Long id;
     private String name;
     private String city;
